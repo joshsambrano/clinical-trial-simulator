@@ -1,11 +1,5 @@
 # Clinical Trial Simulator Shiny App
 
-## HOW TO RUN THE APP
-
-install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib"))
-
-
-shiny::runApp("app.R")
 
 ## Project overview
 This project is an interactive Shiny application that simulates a two-arm randomized clinical trial and shows how different study design choices affect time-to-event analysis.: This project utilizes the following: **simulated patient-level data**, **Kaplan-Meier curves**, a **log-rank test**, and **Cox proportional hazards regression** to demonstrate treatment effects and survival differences.
