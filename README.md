@@ -42,7 +42,7 @@ The app uses the following statistical tools:
 ## Files
 - `app.R`: FE Shiny application
 - `README.md`: project summary
-- `PROJECT_REPORT.md`: code
+- `PROJECT_REPORT.md`: write up
 
 ## Packages needed
 
