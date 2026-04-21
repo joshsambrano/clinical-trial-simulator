@@ -1,7 +1,7 @@
 # Clinical Trial Simulator Shiny App
 
 ## Project overview
-This project is an interactive Shiny application that simulates a two-arm randomized clinical trial and shows how different study design choices affect time-to-event analysis.: This project utilizes the following: **simulated patient-level data**, **Kaplan-Meier curves**, a **log-rank test**, and **Cox proportional hazards regression** to demonstrate treatment effects and survival differences in an applied, educational way.
+This project is an interactive Shiny application that simulates a two-arm randomized clinical trial and shows how different study design choices affect time-to-event analysis.: This project utilizes the following: **simulated patient-level data**, **Kaplan-Meier curves**, a **log-rank test**, and **Cox proportional hazards regression** to demonstrate treatment effects and survival differences.
 
 ## Research objective
 To help users understand how randomized clinical trial design choices influence survival analysis results, including:
