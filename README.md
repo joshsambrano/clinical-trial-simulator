@@ -3,6 +3,8 @@
 ## HOW TO RUN THE APP
 
 install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib"))
+
+
 shiny::runApp("app.R")
 
 ## Project overview
