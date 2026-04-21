@@ -27,13 +27,13 @@ Because this project is focused on trial design and interpretation rather than a
 The app applies three main statistical methods.
 
 ### 1. Kaplan-Meier survival curves
-Kaplan-Meier estimation is used to estimate survival probabilities over time while accounting for right censoring. This is the natural first summary for a time-to-event endpoint in a randomized clinical trial.
+Kaplan-Meier estimation is used to estimate survival probabilities over time while accounting for right censoring. 
 
 ### 2. Log-rank test
 The log-rank test is used to compare the survival distributions of the treatment and control groups. This provides a standard hypothesis test for whether there is evidence of a survival difference between arms.
 
 ### 3. Cox proportional hazards regression
-A Cox proportional hazards model is fit with treatment, age, and biomarker status as predictors. This model estimates hazard ratios while allowing adjustment for participant characteristics. The treatment hazard ratio is the central estimand for the app because it connects directly to how trial efficacy is often summarized.
+A Cox proportional hazards model is fit with treatment, age, and biomarker status as predictors. This model estimates hazard ratios while allowing adjustment for participant characteristics. 
 
 ## Assumptions and diagnostics
 The major assumption checked in the app is the proportional hazards assumption. The app also provides residual-based plots so that users can visually assess whether the hazard ratio appears stable over time.
