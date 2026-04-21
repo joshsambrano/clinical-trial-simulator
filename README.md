@@ -1,7 +1,7 @@
 # Clinical Trial Simulator Shiny App
 
 ## Project overview
-This project is an interactive Shiny application that simulates a two-arm randomized clinical trial and shows how study design choices affect time-to-event analysis. The app was built to match the final project proposal: a **Clinical Trial Simulator** using **simulated patient-level data**, **Kaplan-Meier curves**, a **log-rank test**, and **Cox proportional hazards regression** to demonstrate treatment effects and survival differences in an applied, educational way. This directly reflects the submitted project plan and course final project instructions. fileciteturn0file0L1-L14 fileciteturn0file1L1-L35
+This project is an interactive Shiny application that simulates a two-arm randomized clinical trial and shows how different study design choices affect time-to-event analysis.: This project utilizes the following: **simulated patient-level data**, **Kaplan-Meier curves**, a **log-rank test**, and **Cox proportional hazards regression** to demonstrate treatment effects and survival differences in an applied, educational way.
 
 ## Research objective
 To help users understand how randomized clinical trial design choices influence survival analysis results, including:
@@ -39,25 +39,6 @@ The app uses the following statistical tools:
 - proportional hazards diagnostic table and plots,
 - narrative interpretation tied to the simulated results.
 
-## Why this project meets the rubric
-### 1. Statistical rigor and methodology
-The app uses methods that are appropriate for censored time-to-event outcomes. The treatment effect is modeled with a Cox proportional hazards model, and survival experience is summarized with Kaplan-Meier curves and a log-rank test.
-
-### 2. Interpretation and communication
-The app includes an interpretation tab that translates the statistical output into plain language and ties the results back to the research objective.
-
-### 3. Quality and creativity of deliverable
-The deliverable is an interactive teaching and analysis tool rather than a static report. Users can actively change the design inputs and immediately see how the conclusions change.
-
-### 4. Data exploration and preparation
-The app generates patient-level data and includes summary visualizations for age, follow-up time, censoring, and biomarker prevalence so the dataset can be explored before interpreting the model.
-
-### 5. Justification of model choice and assumptions
-The app explicitly explains why survival methods are appropriate and includes Cox proportional hazards diagnostics using Schoenfeld residual tests.
-
-### 6. Organization and professionalism
-The app is organized into five tabs: Overview, Data Exploration, Model Results, Assumptions & Diagnostics, and Interpretation.
-
 ## Files
 - `app.R`: complete Shiny application
 - `README.md`: project summary, rationale, and rubric alignment
@@ -70,20 +51,14 @@ Install these packages before running the app:
 install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib", "tidyr"))
 ```
 
-## Run the app
-From the project folder:
+## Run app via
+
 
 ```r
 shiny::runApp()
 ```
 
-Or directly:
-
-```r
-source("app.R")
-```
-
-## Suggested presentation/demo flow
+## Suggested workflow
 1. Introduce the clinical trial question and design.
 2. Show how changing the true hazard ratio changes the Kaplan-Meier curves.
 3. Increase dropout and explain what censoring does to precision and interpretation.
