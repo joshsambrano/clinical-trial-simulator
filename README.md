@@ -40,12 +40,11 @@ The app uses the following statistical tools:
 - narrative interpretation tied to the simulated results.
 
 ## Files
-- `app.R`: complete Shiny application
-- `README.md`: project summary, rationale, and rubric alignment
-- `PROJECT_REPORT.md`: polished write-up you can adapt into your final submission narrative
+- `app.R`: FE Shiny application
+- `README.md`: project summary
+- `PROJECT_REPORT.md`: code
 
 ## Packages needed
-Install these packages before running the app:
 
 ```r
 install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib", "tidyr"))
