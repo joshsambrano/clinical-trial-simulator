@@ -54,6 +54,11 @@ install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib", "tidy
 
 ```r
 shiny::runApp()
+
+or via the link below
+
+https://joshsambrano.shinyapps.io/clinical_trial_simulator_project/
+
 ```
 
 ## Suggested workflow for users
