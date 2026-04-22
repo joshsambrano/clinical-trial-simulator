@@ -5,20 +5,19 @@
 This project is an interactive Shiny application that simulates a two-arm randomized clinical trial and shows how different study design choices affect time-to-event analysis.: This project utilizes the following: **simulated patient-level data**, **Kaplan-Meier curves**, a **log-rank test**, and **Cox proportional hazards regression** to demonstrate treatment effects and survival differences.
 
 ## Research objective
-To help users understand how randomized clinical trial design choices influence survival analysis results, including:
+To help the person using this app understand how randomized clinical trial design choices influence survival analysis results, including:
 - survival curves,
 - estimated treatment hazard ratios,
 - statistical significance,
-- censoring patterns,
 - and proportional hazards diagnostics.
 
 ## Core methods
 The app uses the following statistical tools:
 1. **Simulated survival data generation** under an exponential time-to-event model.
-2. **Kaplan-Meier estimation** for survival probability under censoring.
+2. **Kaplan-Meier estimation** for survival probability.
 3. **Log-rank test** to compare survival curves between treatment groups.
 4. **Cox proportional hazards regression** to estimate the adjusted treatment effect.
-5. **Schoenfeld residual diagnostics (`cox.zph`)** to assess the proportional hazards assumption.
+5. **Residual diagnostics (`cox.zph`)** to assess the proportional hazards assumption.
 
 ## Inputs users can change
 - total sample size,
@@ -45,7 +44,7 @@ The app uses the following statistical tools:
 - `README.md`: project summary
 - `PROJECT_REPORT.md`: write up
 
-## Packages needed
+## Packages needed to download before running
 
 ```r
 install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib", "tidyr"))
@@ -53,12 +52,11 @@ install.packages(c("shiny", "ggplot2", "dplyr", "survival", "DT", "bslib", "tidy
 
 ## Run app via
 
-
 ```r
 shiny::runApp()
 ```
 
-## Suggested workflow
+## Suggested workflow for users
 1. Introduce the clinical trial question and design.
 2. Show how changing the true hazard ratio changes the Kaplan-Meier curves.
 3. Increase dropout and explain what censoring does to precision and interpretation.
