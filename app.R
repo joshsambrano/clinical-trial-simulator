@@ -7,7 +7,6 @@ library(bslib)
 library(tidyr)
 
 #-----------------------------
-# Helpers
 #-----------------------------
 
 simulate_trial_data <- function(n_total = 300,
@@ -103,7 +102,7 @@ cox_forest_df <- function(fit) {
 }
 
 #-----------------------------
-# UI
+# UI setup
 #-----------------------------
 
 ui <- fluidPage(
